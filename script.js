@@ -8,3 +8,9 @@ function highlighter(text) {
 		emily.innerHTML = content;
 	}
 }
+
+//Find and replace using Regular Expressions
+function regExpReplacer(text, newText) {
+	const issa = document.getElementById("issa").innerHTML;
+	return issa.replace(text, newText);
+}
