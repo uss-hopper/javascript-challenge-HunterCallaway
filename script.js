@@ -10,7 +10,20 @@ function highlighter(text) {
 }
 
 //Find and replace using Regular Expressions
-function regExpReplacer(text, newText) {
+function regExpReplacer() {
 	const issa = document.getElementById("issa").innerHTML;
-	return issa.replace(text, newText);
+	const newIssa = issa.replace(/about average/ig, 'just great, thank you!');
+	return newIssa;
+}
+
+//Change the font color.
+function fontColorChanger() {
+	const walt = document.getElementById("walt");
+	walt.style.color = "green";
+}
+
+//Change the font color back to black.
+function colorReverter() {
+	const walt = document.getElementById("walt");
+	walt.style.color = "black";
 }
