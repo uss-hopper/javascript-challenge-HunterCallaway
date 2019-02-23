@@ -1,3 +1,7 @@
 .highlighter {
 	background-color: fuchsia;
 }
+
+button {
+	margin-bottom: 1rem;
+}

@@ -27,3 +27,17 @@ function colorReverter() {
 	const walt = document.getElementById("walt");
 	walt.style.color = "black";
 }
+
+//Change the font style.
+window.addEventListener("keydown", event => {
+	if(event.key === "p") {
+		document.getElementById("issa").style.fontFamily = "papyrus";
+	}
+});
+
+//Change the font family back to what it originally was.
+window.addEventListener("keyup", event => {
+	if(event.key === "p") {
+		document.getElementById("issa").style.fontFamily = "";
+	}
+});

@@ -65,12 +65,13 @@
 				"Kosmos" by Walt Whitman (1819-1892)
 			</p>
 		</div>
-		<button onclick="regExpReplacer()">Let's change Issa's mood.</button>
-		<div id="issa">
+		<button onclick="regExpReplacer(newIssa)">Let's change Issa's mood.</button>
+		<div id="issa" onkeydown="fontStyleChanger()" onkeyup="fontReverter()">
 			<p>    New Year’s Day—<br>
 				everything is in blossom!<br>
 				I feel about average.<br>
-				Haiku by Kobayashi Issa (1763-1828), translated by Robert Hass (1941-present)
+				Haiku by Kobayashi Issa (1763-1828), translated by Robert Hass (1941-present)<br>
+				<em>Press the "p" key for a kewl nu font.</em>
 			</p>
 		</div>
 	</body>
