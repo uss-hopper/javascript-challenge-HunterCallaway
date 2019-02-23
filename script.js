@@ -11,9 +11,9 @@ function highlighter(text) {
 
 //Find and replace using Regular Expressions
 function regExpReplacer() {
-	const issa = document.getElementById("issa").innerHTML;
-	const newIssa = issa.replace(/about average/ig, 'just great, thank you!');
-	return newIssa;
+	const issa = document.getElementById("issa");
+	const regex = /about average[.]/ig;
+issa.replace(regex, 'just great, thank you!');
 }
 
 //Change the font color.
@@ -31,7 +31,7 @@ function colorReverter() {
 //Change the font style.
 window.addEventListener("keydown", event => {
 	if(event.key === "p") {
-		document.getElementById("issa").style.fontFamily = "papyrus";
+		document.getElementById("issa").style.fontFamily = "impact";
 	}
 });
 
