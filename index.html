@@ -25,7 +25,7 @@
 		<h1>JavaScript Events Challenge</h1>
 
 		<button onclick="highlighter('Conclusion')">Highlight</button>
-		<div id="emily">
+		<div id="emily" draggable="true" ondragstart="drag(event)">
 			<p>This World is not Conclusion.<br>
 				A Species stands beyond -<br>
 				Invisible, as Music -<br>
@@ -46,9 +46,12 @@
 				Strong Hallelujahs roll -<br>
 				Narcotics cannot still the Tooth<br>
 				That nibbles at the soul -<br>
-				"This World is not Conclusion" by Emily Dickinson (1830-1886)
+				"This World is not Conclusion" by Emily Dickinson (1830-1886)<br>
+				<em>See if you can move Emily into the following box.</em>
 			</p>
 		</div>
+		<div id="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
 		<div id="walt" onmouseover="fontColorChanger()" onmouseout="colorReverter()">
 			<p><em>Mouseover this poem and see what happens.</em><br><br>
 				Who includes diversity and is Nature,<br>
