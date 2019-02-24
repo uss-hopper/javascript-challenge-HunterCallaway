@@ -11,9 +11,7 @@ function highlighter(text) {
 
 //Find and replace using Regular Expressions
 function regExpReplacer() {
-	const issa = document.getElementById("issa");
-	const regex = /about average[.]/ig;
-issa.replace(regex, 'just great, thank you!');
+	document.getElementById("issa").innerHTML = document.getElementById("issa").innerHTML.replace(/about average[.]/gi, 'just great, thank you!');
 }
 
 //Change the font color.
